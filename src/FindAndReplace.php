@@ -33,6 +33,17 @@
             return $positions;
         }
 
+        function truly_impossible($input1, $input2, $input3)
+        {
+            $word_positions = $this->impossible($input1, $input2);
+            foreach ($word_positions as $position) {
+                $word_to_swap = substr($input1, $position, strlen($input2));
+                $replacement_word = $this->caseReplicate($word_to_swap, $input3);
+                $input1 = substr_replace($input1, $replacement_word, $position, strlen($input2));
+            }
+            return $input1;
+        }
+
     }
 
 

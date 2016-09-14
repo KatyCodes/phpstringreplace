@@ -63,6 +63,21 @@
             $this->assertEquals([7, 29, 36], $result);
         }
 
+        function test_substring_replacement_with_case_preservation()
+        {
+            //Arrange
+            $test_FindAndReplace = new FindAndReplace;
+            $first_input = "Please DOggedly explain your dOGma, doG";
+            $second_input = "dog";
+            $third_input = "cat";
+
+            //Act
+            $result = $test_FindAndReplace->truly_impossible($first_input, $second_input, $third_input);
+
+            //Assert
+            $this->assertEquals("Please CAtgedly explain your cATma, caT", $result);
+        }
+
     }
 
 ?>

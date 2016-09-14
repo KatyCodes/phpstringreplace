@@ -20,7 +20,20 @@ _{Leave nothing to chance! You want it to be easy for potential users, employers
 
 ## Specifications
 
-
+* Replace one whole word in a sentence with another whole word
+    * Input: "Hello world", "world", "universe"
+    * Output: "Hello universe"
+* Replace subset of characters that match the input set of characters
+    * Input: "Please explain your dogma, dog", "dog", "cat"
+    * Output: "Please explain your catma, cat"
+    * Input: "1234567890", "456", "987"
+    * Output: "1239877890"
+* Subset character search returns positions of all occurrences of substring
+    * Input: "Please DOggedly explain your dOGma, doG", "dog", "cat"
+    * Output: [7, 29, 36]
+* Subset character replacement preserves capital letters in the original string
+    * Input: "Please DOggedly explain your dOGma, doG", "dog", "cat"
+    * Output: "Please CAtgedly explain your cATma, caT"
 
 ## Known Bugs
 

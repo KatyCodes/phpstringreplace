@@ -28,6 +28,9 @@ _{Leave nothing to chance! You want it to be easy for potential users, employers
     * Output: "Please explain your catma, cat"
     * Input: "1234567890", "456", "987"
     * Output: "1239877890"
+* Duplicate upper and lowercase pattern of input word on target word
+    * Input: "dOG", "cat"
+    * Output: "cAT"
 * Subset character search returns positions of all occurrences of substring
     * Input: "Please DOggedly explain your dOGma, doG", "dog", "cat"
     * Output: [7, 29, 36]

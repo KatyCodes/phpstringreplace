@@ -35,19 +35,18 @@
             $this->assertEquals("Please explain your catma, cat", $result);
         }
 
-        function test_substring_replace2()
+        function test_case_replication()
         {
             //Arrange
             $test_FindAndReplace = new FindAndReplace;
-            $first_input = "1234567890";
-            $second_input = "456";
-            $third_input = "987";
+            $first_input = "dOGgoBAt";
+            $second_input = "cattatat";
 
             //Act
-            $result = $test_FindAndReplace->FAR($first_input, $second_input, $third_input);
+            $result = $test_FindAndReplace->caseReplicate($first_input, $second_input);
 
             //Assert
-            $this->assertEquals("1239877890", $result);
+            $this->assertEquals("cATtaTAt", $result);
         }
 
         function test_substring_position()
@@ -63,7 +62,6 @@
             //Assert
             $this->assertEquals([7, 29, 36], $result);
         }
-
 
     }
 

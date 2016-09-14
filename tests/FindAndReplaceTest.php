@@ -29,7 +29,7 @@
             $third_input = "cat";
 
             //Act
-            $result = $test_FindAndReplace->FAR($first_input, $second_input, $third_input);
+            $result = $test_FindAndReplace->truly_impossible($first_input, $second_input, $third_input);
 
             //Assert
             $this->assertEquals("Please explain your catma, cat", $result);
